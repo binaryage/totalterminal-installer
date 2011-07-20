@@ -1,4 +1,4 @@
-tell application "Finder"
+tell application "Terminal"
 	delay 1 -- this delay is important to prevent random "Connection is Invalid -609" AppleScript errors 
 	try
 		«event BATTinit»
