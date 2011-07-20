@@ -10,12 +10,12 @@
 	<string>Antonin Hildebrand</string>
 	<key>BundledFiles</key>
 	<array>
-		<string>/Users/darwin/code/totalfinder/totalfinder-installer/Uninstall.applescript</string>
+		<string>/Users/darwin/code/totalterminal/totalterminal-installer/uninstall.applescript</string>
 	</array>
 	<key>Creator</key>
 	<string>Platypus-4.3</string>
 	<key>CustomIconPath</key>
-	<string>/Users/darwin/code/totalfinder/totalfinder-features/totalfinder-i18n/installer/totalfinder-uninstaller.icns</string>
+	<string>/Users/darwin/code/totalterminal/totalterminal-i18n/installer/uninstaller.icns</string>
 	<key>Destination</key>
 	<string>/Users/darwin/Desktop/MyApp.app</string>
 	<key>DestinationOverride</key>
@@ -36,11 +36,11 @@
 	<key>HasCustomIcon</key>
 	<true/>
 	<key>Identifier</key>
-	<string>com.binaryage.UninstallTotalFinder</string>
+	<string>com.binaryage.totalterminal.uninstaller</string>
 	<key>Interpreter</key>
 	<string>/usr/bin/osascript</string>
 	<key>Name</key>
-	<string>Uninstall TotalFinder</string>
+	<string>Uninstall TotalTerminal</string>
 	<key>NibPath</key>
 	<string>/usr/local/share/platypus/MainMenu.nib</string>
 	<key>OptimizeApplication</key>
@@ -54,7 +54,7 @@
 	<key>Role</key>
 	<string>Viewer</string>
 	<key>ScriptPath</key>
-	<string>/Users/darwin/code/totalfinder/totalfinder-installer/Uninstall.applescript</string>
+	<string>/Users/darwin/code/totalterminal/totalterminal-installer/Uninstall.applescript</string>
 	<key>Secure</key>
 	<false/>
 	<key>ShowInDock</key>

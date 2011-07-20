@@ -1,10 +1,10 @@
 tell application "Finder"
 	delay 1 -- this delay is important to prevent random "Connection is Invalid -609" AppleScript errors 
 	try
-		«event BATFinit»
+		«event BATTinit»
 	on error msg number num
 		display dialog "
-Unable to launch TotalFinder.
+Unable to launch TotalTerminal.
 		
 " & msg & " (" & (num as text) & ")" & " 
 
