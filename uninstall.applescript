@@ -2,13 +2,6 @@ property stdout : ""
 on run
 	set newline to ASCII character 10
 	
-	set stdout to stdout & "  shutdown TotalTerminalCrashWatcher ..." & newline
-	try
-		do shell script "killall -SIGINT TotalTerminalCrashWatcher" with administrator privileges
-	on error
-		set stdout to stdout & "    TotalTerminalCrashWatcher was not running" & newline
-	end try
-	
 	set stdout to stdout & "  shutdown Terminal ..." & newline
 	try
 		tell application "Terminal" to quit
