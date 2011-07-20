@@ -1,7 +1,7 @@
 #!/bin/sh
 
-osascript -e 'tell application "Finder" to quit'
+osascript -e 'tell application "Terminal" to quit'
 
-killall -SIGINT TotalFinderCrashWatcher
+killall -SIGINT TotalTerminalCrashWatcher
 
 exit 0

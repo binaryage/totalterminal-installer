@@ -8,7 +8,6 @@ PARENT_DIR = File.expand_path('..')
 RELEASE_DIR = File.join(PARENT_DIR, 'release')
 BIN_DIR = File.join(PARENT_DIR, 'bin') # 
 
-KEXT_DIR     = File.join(PARENT_DIR, 'totalterminal-kext')
 I18N_DIR     = File.join(PARENT_DIR, 'totalterminal-i18n')
 I18N_DIR_INSTALLER = File.join(I18N_DIR, 'installer')
 
@@ -127,7 +126,7 @@ task :build do
     sys("packagesbuild -v -F \"#{ROOT_DIR}\" \"#{ROOT_DIR}/installer-patched.pkgproj\"")
     die("build failed") unless $?==0
    
-    installer_icon = File.join(I18N_DIR_INSTALLER, "totalterminal-installer.icns")
+    installer_icon = File.join(I18N_DIR_INSTALLER, "installer.icns")
     sys("./wincent-icon-util -icon \"#{installer_icon}\" -folder \"#{release}\"")
     die("build failed") unless $?==0
    

@@ -22,482 +22,7 @@
 									<key>GID</key>
 									<integer>80</integer>
 									<key>PATH</key>
-									<string>Utilities</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>509</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-							</array>
-							<key>GID</key>
-							<integer>80</integer>
-							<key>PATH</key>
-							<string>Applications</string>
-							<key>PATH_TYPE</key>
-							<integer>0</integer>
-							<key>PERMISSIONS</key>
-							<integer>509</integer>
-							<key>TYPE</key>
-							<integer>1</integer>
-							<key>UID</key>
-							<integer>0</integer>
-						</dict>
-						<dict>
-							<key>CHILDREN</key>
-							<array>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>80</integer>
-									<key>PATH</key>
-									<string>Application Support</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>509</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>80</integer>
-									<key>PATH</key>
-									<string>Documentation</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>509</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>0</integer>
-									<key>PATH</key>
-									<string>Filesystems</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>509</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>80</integer>
-									<key>PATH</key>
-									<string>Frameworks</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>509</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>80</integer>
-									<key>PATH</key>
-									<string>Internet Plug-Ins</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>509</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>0</integer>
-									<key>PATH</key>
-									<string>LaunchAgents</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>493</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>0</integer>
-									<key>PATH</key>
-									<string>LaunchDaemons</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>493</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>0</integer>
-									<key>PATH</key>
-									<string>PreferencePanes</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>493</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>80</integer>
-									<key>PATH</key>
-									<string>Preferences</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>509</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>80</integer>
-									<key>PATH</key>
-									<string>Printers</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>509</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>0</integer>
-									<key>PATH</key>
-									<string>PrivilegedHelperTools</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>1005</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>80</integer>
-									<key>PATH</key>
-									<string>QuickTime</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>509</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>80</integer>
-									<key>PATH</key>
-									<string>Screen Savers</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>509</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>80</integer>
-									<key>PATH</key>
-									<string>Scripts</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>509</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>80</integer>
-									<key>PATH</key>
-									<string>Services</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>509</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>0</integer>
-									<key>PATH</key>
-									<string>Widgets</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>493</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-							</array>
-							<key>GID</key>
-							<integer>80</integer>
-							<key>PATH</key>
-							<string>Library</string>
-							<key>PATH_TYPE</key>
-							<integer>0</integer>
-							<key>PERMISSIONS</key>
-							<integer>1021</integer>
-							<key>TYPE</key>
-							<integer>1</integer>
-							<key>UID</key>
-							<integer>0</integer>
-						</dict>
-						<dict>
-							<key>CHILDREN</key>
-							<array>
-								<dict>
-									<key>CHILDREN</key>
-									<array>
-										<dict>
-											<key>CHILDREN</key>
-											<array>
-												<dict>
-													<key>CHILDREN</key>
-													<array/>
-													<key>GID</key>
-													<integer>0</integer>
-													<key>PATH</key>
-													<string>../bin/TotalFinder.kext</string>
-													<key>PATH_TYPE</key>
-													<integer>3</integer>
-													<key>PERMISSIONS</key>
-													<integer>493</integer>
-													<key>TYPE</key>
-													<integer>3</integer>
-													<key>UID</key>
-													<integer>0</integer>
-												</dict>
-											</array>
-											<key>GID</key>
-											<integer>0</integer>
-											<key>PATH</key>
-											<string>Extensions</string>
-											<key>PATH_TYPE</key>
-											<integer>0</integer>
-											<key>PERMISSIONS</key>
-											<integer>493</integer>
-											<key>TYPE</key>
-											<integer>1</integer>
-											<key>UID</key>
-											<integer>0</integer>
-										</dict>
-									</array>
-									<key>GID</key>
-									<integer>0</integer>
-									<key>PATH</key>
-									<string>Library</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>493</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-							</array>
-							<key>GID</key>
-							<integer>0</integer>
-							<key>PATH</key>
-							<string>System</string>
-							<key>PATH_TYPE</key>
-							<integer>0</integer>
-							<key>PERMISSIONS</key>
-							<integer>493</integer>
-							<key>TYPE</key>
-							<integer>1</integer>
-							<key>UID</key>
-							<integer>0</integer>
-						</dict>
-						<dict>
-							<key>CHILDREN</key>
-							<array>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>0</integer>
-									<key>PATH</key>
-									<string>Shared</string>
-									<key>PATH_TYPE</key>
-									<integer>0</integer>
-									<key>PERMISSIONS</key>
-									<integer>1023</integer>
-									<key>TYPE</key>
-									<integer>1</integer>
-									<key>UID</key>
-									<integer>0</integer>
-								</dict>
-							</array>
-							<key>GID</key>
-							<integer>80</integer>
-							<key>PATH</key>
-							<string>Users</string>
-							<key>PATH_TYPE</key>
-							<integer>0</integer>
-							<key>PERMISSIONS</key>
-							<integer>493</integer>
-							<key>TYPE</key>
-							<integer>1</integer>
-							<key>UID</key>
-							<integer>0</integer>
-						</dict>
-					</array>
-					<key>GID</key>
-					<integer>80</integer>
-					<key>PATH</key>
-					<string>/</string>
-					<key>PATH_TYPE</key>
-					<integer>0</integer>
-					<key>PERMISSIONS</key>
-					<integer>1021</integer>
-					<key>TYPE</key>
-					<integer>1</integer>
-					<key>UID</key>
-					<integer>0</integer>
-				</dict>
-				<key>PAYLOAD_TYPE</key>
-				<integer>0</integer>
-				<key>VERSION</key>
-				<integer>1</integer>
-			</dict>
-			<key>PACKAGE_SCRIPTS</key>
-			<dict>
-				<key>POSTINSTALL_PATH</key>
-				<dict>
-					<key>PATH</key>
-					<string>script_kext_post</string>
-					<key>PATH_TYPE</key>
-					<integer>3</integer>
-				</dict>
-				<key>PREINSTALL_PATH</key>
-				<dict>
-					<key>PATH</key>
-					<string>script_kext_pre</string>
-					<key>PATH_TYPE</key>
-					<integer>3</integer>
-				</dict>
-				<key>RESOURCES</key>
-				<array/>
-			</dict>
-			<key>PACKAGE_SETTINGS</key>
-			<dict>
-				<key>AUTHENTICATION</key>
-				<true/>
-				<key>CONCLUSION_ACTION</key>
-				<integer>0</integer>
-				<key>IDENTIFIER</key>
-				<string>com.binaryage.pkg.totalfinder.kext</string>
-				<key>LOCATION</key>
-				<integer>0</integer>
-				<key>NAME</key>
-				<string>TotalFinder Kernel Extension</string>
-				<key>OVERWRITE_PERMISSIONS</key>
-				<true/>
-				<key>VERSION</key>
-				<string>##VERSION##</string>
-			</dict>
-			<key>TYPE</key>
-			<integer>0</integer>
-			<key>UUID</key>
-			<string>04A9FCBA-C75C-49A1-99C0-7494F61AD2AC</string>
-		</dict>
-		<dict>
-			<key>PACKAGE_FILES</key>
-			<dict>
-				<key>DEFAULT_INSTALL_LOCATION</key>
-				<string>/</string>
-				<key>HIERARCHY</key>
-				<dict>
-					<key>CHILDREN</key>
-					<array>
-						<dict>
-							<key>CHILDREN</key>
-							<array>
-								<dict>
-									<key>CHILDREN</key>
-									<array/>
-									<key>GID</key>
-									<integer>80</integer>
-									<key>PATH</key>
-									<string>../bin/TotalFinder.app</string>
+									<string>../bin/TotalTerminal.app</string>
 									<key>PATH_TYPE</key>
 									<integer>3</integer>
 									<key>PERMISSIONS</key>
@@ -757,7 +282,7 @@
 											<key>GID</key>
 											<integer>80</integer>
 											<key>PATH</key>
-											<string>../totalfinder-osax/bin/TotalFinder.osax</string>
+											<string>../totalterminal-osax/bin/TotalTerminal.osax</string>
 											<key>PATH_TYPE</key>
 											<integer>3</integer>
 											<key>PERMISSIONS</key>
@@ -971,11 +496,11 @@
 				<key>CONCLUSION_ACTION</key>
 				<integer>0</integer>
 				<key>IDENTIFIER</key>
-				<string>com.binaryage.pkg.totalfinder.app</string>
+				<string>com.binaryage.pkg.totalterminal.app</string>
 				<key>LOCATION</key>
 				<integer>0</integer>
 				<key>NAME</key>
-				<string>TotalFinder Plugin</string>
+				<string>TotalTerminal Plugin</string>
 				<key>OVERWRITE_PERMISSIONS</key>
 				<true/>
 				<key>VERSION</key>
@@ -1019,7 +544,7 @@
 				<key>BACKGROUND_PATH</key>
 				<dict>
 					<key>PATH</key>
-					<string>../totalfinder-features/totalfinder-i18n/installer/background.png</string>
+					<string>../totalterminal-i18n/installer/background.png</string>
 					<key>PATH_TYPE</key>
 					<integer>3</integer>
 				</dict>
@@ -1036,27 +561,6 @@
 					<dict>
 						<key>LIST</key>
 						<array>
-							<dict>
-								<key>DESCRIPTION</key>
-								<array/>
-								<key>OPTIONS</key>
-								<dict>
-									<key>HIDDEN</key>
-									<false/>
-									<key>STATE</key>
-									<integer>1</integer>
-								</dict>
-								<key>PACKAGE_UUID</key>
-								<string>04A9FCBA-C75C-49A1-99C0-7494F61AD2AC</string>
-								<key>TITLE</key>
-								<array/>
-								<key>TOOLTIP</key>
-								<array/>
-								<key>TYPE</key>
-								<integer>0</integer>
-								<key>UUID</key>
-								<string>24DEB390-027D-414C-A211-19399DDCB83B</string>
-							</dict>
 							<dict>
 								<key>DESCRIPTION</key>
 								<array/>
@@ -1155,180 +659,11 @@
 						<key>VALUE</key>
 						<dict>
 							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/English.lproj/welcome.rtf</string>
+							<string>../totalterminal-i18n/installer/English.lproj/welcome.rtf</string>
 							<key>PATH_TYPE</key>
 							<integer>1</integer>
 						</dict>
 					</dict>
-					<dict>
-						<key>LANGUAGE</key>
-						<string>Japanese</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/Japanese.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					<dict>
-						<key>LANGUAGE</key>
-						<string>Italian</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/Italian.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					<dict>
-						<key>LANGUAGE</key>
-						<string>Polish</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/Polish.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					<dict>
-						<key>LANGUAGE</key>
-						<string>Russian</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/Russian.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					<dict>
-						<key>LANGUAGE</key>
-						<string>French</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/French.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					<dict>
-						<key>LANGUAGE</key>
-						<string>Swedish</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/sv.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					<dict>
-						<key>LANGUAGE</key>
-						<string>German</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/German.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					<dict>
-						<key>LANGUAGE</key>
-						<string>Finnish</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/fi.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					<!--
-					<dict>
-						<key>LANGUAGE</key>
-						<string>Welsh</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/Welsh.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					<dict>
-						<key>LANGUAGE</key>
-						<string>Bulgarian</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/Bulgarian.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					-->
-					<dict>
-						<key>LANGUAGE</key>
-						<string>Spanish</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/Spanish.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					<dict>
-						<key>LANGUAGE</key>
-						<string>Greek</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/Greek.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					<dict>
-						<key>LANGUAGE</key>
-						<string>Macedonian</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/Macedonian.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					<dict>
-						<key>LANGUAGE</key>
-						<string>Danish</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/da.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					<!--
-					<dict>
-						<key>LANGUAGE</key>
-						<string>Ukrainian</string>
-						<key>VALUE</key>
-						<dict>
-							<key>PATH</key>
-							<string>../totalfinder-features/totalfinder-i18n/installer/Ukrainian.lproj/welcome.rtf</string>
-							<key>PATH_TYPE</key>
-							<integer>1</integer>
-						</dict>
-					</dict>
-					-->
 				</array>
 			</dict>
 			<key>LICENSE</key>
@@ -1393,7 +728,7 @@
 							<key>SECONDARY_VALUE</key>
 							<string></string>
 							<key>VALUE</key>
-							<string>TotalFinder requires Snow Leopard (OSX 10.6.x)</string>
+							<string>TotalTerminal requires Snow Leopard (OSX 10.6.x)</string>
 						</dict>
 					</array>
 					<key>NAME</key>
@@ -1420,7 +755,7 @@
 			<key>BUILD_PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>/Users/darwin/code/totalfinder/release</string>
+				<string>/Users/darwin/code/totalterminal/release</string>
 				<key>PATH_TYPE</key>
 				<integer>3</integer>
 			</dict>
@@ -1443,7 +778,7 @@
 					<key>PROXY_NAME</key>
 					<string>Remove .DS_Store files</string>
 					<key>PROXY_TOOLTIP</key>
-					<string>Remove ".DS_Store" files created by the Finder.</string>
+					<string>Remove ".DS_Store" files created by the Terminal.</string>
 					<key>STATE</key>
 					<true/>
 				</dict>
@@ -1577,9 +912,9 @@
 				</dict>
 			</array>
 			<key>NAME</key>
-			<string>TotalFinder</string>
+			<string>TotalTerminal</string>
 			<key>REFERENCE_FOLDER_PATH</key>
-			<string>/Users/darwin/code/totalfinder</string>
+			<string>/Users/darwin/code/totalterminal</string>
 		</dict>
 	</dict>
 	<key>TYPE</key>

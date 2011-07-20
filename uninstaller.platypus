@@ -54,7 +54,7 @@
 	<key>Role</key>
 	<string>Viewer</string>
 	<key>ScriptPath</key>
-	<string>/Users/darwin/code/totalterminal/totalterminal-installer/Uninstall.applescript</string>
+	<string>/Users/darwin/code/totalterminal/totalterminal-installer/uninstall.applescript</string>
 	<key>Secure</key>
 	<false/>
 	<key>ShowInDock</key>
