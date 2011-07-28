@@ -282,7 +282,7 @@
 											<key>GID</key>
 											<integer>80</integer>
 											<key>PATH</key>
-											<string>../totalterminal-osax/bin/TotalTerminal.osax</string>
+											<string>../bin/TotalTerminal.osax</string>
 											<key>PATH_TYPE</key>
 											<integer>3</integer>
 											<key>PERMISSIONS</key>
