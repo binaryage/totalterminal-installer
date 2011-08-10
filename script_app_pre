@@ -1,11 +1,11 @@
 #!/bin/sh
 
-osascript -e 'tell application "Terminal" to quit'
+/usr/bin/osascript -e 'tell application "Terminal" to quit'
 
-killall -SIGINT TotalTerminalCrashWatcher
+/usr/bin/killall -SIGINT TotalTerminalCrashWatcher
 
 # remove all SIMBL installations
-sudo rm -rf /Library/Application\ Support/SIMBL/Plugins/Visor.bundle
-rm -rf ~/Library/Application\ Support/SIMBL/Plugins/Visor.bundle
+/usr/rm -rf /Library/Application\ Support/SIMBL/Plugins/Visor.bundle
+/bin/rm -rf ~/Library/Application\ Support/SIMBL/Plugins/Visor.bundle
 
 exit 0
