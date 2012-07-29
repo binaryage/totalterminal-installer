@@ -5,7 +5,7 @@
 /usr/bin/killall -SIGINT TotalTerminalCrashWatcher
 
 # remove all SIMBL installations
-/usr/rm -rf /Library/Application\ Support/SIMBL/Plugins/Visor.bundle
+/bin/rm -rf /Library/Application\ Support/SIMBL/Plugins/Visor.bundle
 /bin/rm -rf ~/Library/Application\ Support/SIMBL/Plugins/Visor.bundle
 
 exit 0
