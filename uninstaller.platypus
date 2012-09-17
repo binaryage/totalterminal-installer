@@ -7,7 +7,7 @@
 	<key>AcceptsText</key>
 	<false/>
 	<key>Authentication</key>
-	<true/>
+	<false/>
 	<key>Author</key>
 	<string>Antonin Hildebrand</string>
 	<key>BundledFiles</key>
@@ -15,7 +15,7 @@
 		<string>uninstall.applescript</string>
 	</array>
 	<key>Creator</key>
-	<string>Platypus-4.7</string>
+	<string>Platypus-4.8</string>
 	<key>DeclareService</key>
 	<false/>
 	<key>Destination</key>
@@ -29,7 +29,7 @@
 	<key>Droppable</key>
 	<false/>
 	<key>ExecutablePath</key>
-	<string>/usr/local/share/platypus/ScriptExec</string>
+	<string>./bin/platypus/ScriptExec</string>
 	<key>FileTypes</key>
 	<array>
 		<string>****</string>
@@ -46,7 +46,7 @@
 	<key>Name</key>
 	<string>TotalTerminal Uninstaller</string>
 	<key>NibPath</key>
-	<string>/usr/local/share/platypus/MainMenu.nib</string>
+	<string>./bin/platypus/MainMenu.nib</string>
 	<key>OptimizeApplication</key>
 	<true/>
 	<key>Output</key>

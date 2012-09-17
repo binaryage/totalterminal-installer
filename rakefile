@@ -113,10 +113,10 @@ task :build do
     sys("rm -rf \"#{uninstaller}\"") if File.exist? uninstaller
     die("build failed") unless $?==0
 
-    codesign(uninstaller)
-    
-    sys("platypus -P \"#{uninstaller_profile}\" \"#{uninstaller}\"")
+    sys("./bin/platypus/platypus_clt -P \"#{uninstaller_profile}\" \"#{uninstaller}\"")
     die("build failed") unless $?==0
+    
+    codesign(uninstaller)
     
     sys("cp -r \"#{uninstaller}\" \"#{BIN_DIR}/TotalTerminal.osax/Contents/Resources/TotalTerminal.bundle/Contents/Resources\"")
     die("build failed") unless $?==0
@@ -143,14 +143,14 @@ task :build do
 
     codesign("#{BIN_DIR}/TotalTerminal.app")
     
-    sys("packagesbuild -v -F \"#{ROOT_DIR}\" \"#{ROOT_DIR}/installer-patched.pkgproj\"")
+    sys("./bin/packagesbuild -v -F \"#{ROOT_DIR}\" \"#{ROOT_DIR}/installer-patched.pkgproj\"")
     die("build failed") unless $?==0
    
     # codesign the pkg
     productsign(release)
 
     installer_icon = File.join(I18N_DIR_INSTALLER, "installer.icns")
-    sys("./setfileicon \"#{installer_icon}\" \"#{release}\"")
+    sys("./bin/setfileicon \"#{installer_icon}\" \"#{release}\"")
     die("build failed") unless $?==0
    
     releasedmg = File.join($release, "TotalTerminal-#{$version}.dmg")
