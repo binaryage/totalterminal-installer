@@ -544,7 +544,7 @@
 				<key>BACKGROUND_PATH</key>
 				<dict>
 					<key>PATH</key>
-					<string>../totalterminal-i18n/installer/background.png</string>
+					<string>../i18n/installer/background.png</string>
 					<key>PATH_TYPE</key>
 					<integer>3</integer>
 				</dict>
@@ -659,7 +659,7 @@
 						<key>VALUE</key>
 						<dict>
 							<key>PATH</key>
-							<string>../totalterminal-i18n/installer/English.lproj/welcome.rtf</string>
+							<string>../i18n/installer/English.lproj/welcome.rtf</string>
 							<key>PATH_TYPE</key>
 							<integer>1</integer>
 						</dict>
@@ -714,7 +714,7 @@
 						<key>IC_REQUIREMENT_OS_DISTRIBUTION_TYPE</key>
 						<integer>0</integer>
 						<key>IC_REQUIREMENT_OS_MINIMUM_VERSION</key>
-						<integer>100600</integer>
+						<integer>100700</integer>
 					</dict>
 					<key>IC_REQUIREMENT_CHECK_TYPE</key>
 					<integer>0</integer>
@@ -728,7 +728,7 @@
 							<key>SECONDARY_VALUE</key>
 							<string></string>
 							<key>VALUE</key>
-							<string>TotalTerminal requires Snow Leopard (OSX 10.6.x)</string>
+							<string>TotalTerminal requires Lion (OSX 10.7)</string>
 						</dict>
 					</array>
 					<key>NAME</key>

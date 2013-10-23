@@ -6,12 +6,12 @@ TMP_DIR_BUILD = File.join(TMP_DIR, 'build')
 
 PARENT_DIR = File.expand_path('..')
 RELEASE_DIR = File.join(PARENT_DIR, 'release')
-BIN_DIR = File.join(PARENT_DIR, 'bin') # 
+BIN_DIR = File.join(PARENT_DIR, 'bin') #
 BIN_TOTALTERMINAL_BUNDLE = File.join(BIN_DIR, 'TotalTerminal.osax/Contents/Resources/TotalTerminal.bundle')
 BIN_TOTALTERMINAL_FRAMEWORKS = File.join(BIN_TOTALTERMINAL_BUNDLE, 'Contents/Frameworks')
 BIN_TOTALTERMINAL_RESOURCES = File.join(BIN_TOTALTERMINAL_BUNDLE, 'Contents/Resources')
 
-I18N_DIR     = File.join(PARENT_DIR, 'totalterminal-i18n')
+I18N_DIR     = File.join(PARENT_DIR, 'i18n')
 I18N_DIR_INSTALLER = File.join(I18N_DIR, 'installer')
 
 ################################################################################################
@@ -81,7 +81,7 @@ task :build do
     sys("mkdir -p #{TMP_DIR}") unless File.exists? TMP_DIR
     sys("mkdir -p #{TMP_DIR_BUILD}") unless File.exists? TMP_DIR_BUILD
     sys("mkdir -p #{RELEASE_DIR}") unless File.exists? RELEASE_DIR
-    
+
     $products = ENV["products"]
     unless $products then
         puts "no products path specified, using dummy products".red
@@ -94,36 +94,21 @@ task :build do
     $products = File.expand_path($products)
 
     $release = File.expand_path(ENV["release"] || RELEASE_DIR)
-    
+
     sys("cp \"#{ROOT_DIR}/installer.pkgproj\" \"#{ROOT_DIR}/installer-patched.pkgproj\"")
     patch("#{ROOT_DIR}/installer-patched.pkgproj", [
-        ['##VERSION##', $version], 
+        ['##VERSION##', $version],
         ['##INSTALLER_TITLE##', "TotalTerminal #{$version}"],
         ['/Users/darwin/code/totalterminal/release', $release]
     ])
 
-    sys("cp \"#{ROOT_DIR}/uninstaller.platypus\" \"#{ROOT_DIR}/uninstaller-patched.platypus\"")
-    patch("#{ROOT_DIR}/uninstaller-patched.platypus", [
-        ["/Users/darwin/code/totalterminal", "#{ROOT_DIR}/.."]
-    ])
-  
-    uninstaller = File.join(ROOT_DIR, "TotalTerminal Uninstaller.app")
-    uninstaller_profile = File.join(ROOT_DIR, "uninstaller-patched.platypus")
-  
-    sys("rm -rf \"#{uninstaller}\"") if File.exist? uninstaller
-    die("build failed") unless $?==0
-
-    sys("./bin/platypus/platypus_clt -P \"#{uninstaller_profile}\" \"#{uninstaller}\"")
-    die("build failed") unless $?==0
-    
+    uninstaller = "#{BIN_TOTALTERMINAL_RESOURCES}/TotalTerminal Uninstaller.app"
     codesign(uninstaller)
-    
-    sys("cp -r \"#{uninstaller}\" \"#{BIN_DIR}/TotalTerminal.osax/Contents/Resources/TotalTerminal.bundle/Contents/Resources\"")
-    die("build failed") unless $?==0
 
     # codesign stuff
     codesign(File.join(BIN_TOTALTERMINAL_FRAMEWORKS, "Sparkle.framework/Versions/A/Resources/finish_installation.app"))
     codesign(File.join(BIN_TOTALTERMINAL_FRAMEWORKS, "Sparkle.framework/Versions/A"))
+    codesign(File.join(BIN_TOTALTERMINAL_FRAMEWORKS, "BAKit.framework/Versions/A"))
     codesign(File.join(BIN_TOTALTERMINAL_RESOURCES, "TotalTerminalCrashWatcher.app"))
     codesign(File.join(BIN_TOTALTERMINAL_BUNDLE))
     codesign(File.join(BIN_DIR, "TotalTerminal.osax"))
@@ -131,42 +116,42 @@ task :build do
     patch("#{BIN_DIR}/TotalTerminal.app/Contents/Info.plist", [
         ['##VERSION##', $version]
     ])
-    
+
     # compilation of main.applescript -> main.scpt is done during build, here just check its presence
     Dir.chdir("#{BIN_DIR}/TotalTerminal.app/Contents/Resources/Scripts") do
         die("no main.scpt present!") unless File.exists? "main.scpt"
     end
-   
+
     release = File.join($release, "TotalTerminal.pkg") # THIS MUST BE THE SAME NAME AS OF THE APP! REQUIRED BY SPARKLE
     sys("rm -rf \"#{release}\"") if File.exist? release
     die("build failed") unless $?==0
 
     codesign("#{BIN_DIR}/TotalTerminal.app")
-    
+
     sys("./bin/packagesbuild -v -F \"#{ROOT_DIR}\" \"#{ROOT_DIR}/installer-patched.pkgproj\"")
     die("build failed") unless $?==0
-   
+
     # codesign the pkg
     productsign(release)
 
     installer_icon = File.join(I18N_DIR_INSTALLER, "installer.icns")
     sys("./bin/setfileicon \"#{installer_icon}\" \"#{release}\"")
     die("build failed") unless $?==0
-   
+
     releasedmg = File.join($release, "TotalTerminal-#{$version}.dmg")
     sys("rm -rf \"#{releasedmg}\"") if File.exist? releasedmg
     die("build failed") unless $?==0
-   
+
     readme_source = File.join(I18N_DIR_INSTALLER, "readme.pdf")
     readme = File.join(TMP_DIR, "Readme.pdf")
     sys("mv \"#{readme_source}\" \"#{readme}\"")
- 
+
     sys("hdiutil create \"#{releasedmg}\" -volname \"TotalTerminal\" -format UDBZ -fs HFS+ -srcfolder \"#{release}\" -srcfolder \"#{uninstaller}\" -srcfolder \"#{readme}\"")
     die("build failed") unless $?==0
-    
+
     Rake::Task["clean"].execute
 end
-  
+
 desc "removes intermediate build files"
 task :clean do
     puts "Cleaning intermediate build files...".magenta
