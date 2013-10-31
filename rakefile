@@ -143,8 +143,6 @@ task :build do
 
     sys("hdiutil create \"#{releasedmg}\" -volname \"TotalTerminal\" -format UDBZ -fs HFS+ -srcfolder \"#{release}\" -srcfolder \"#{uninstaller}\" -srcfolder \"#{readme}\"")
     die("build failed") unless $?==0
-
-    Rake::Task["clean"].execute
 end
 
 desc "removes intermediate build files"
