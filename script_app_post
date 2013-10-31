@@ -1,4 +1,11 @@
 #!/bin/sh
 
-# http://getsatisfaction.com/binaryage/topics/totalterminal_installer_setting_tmpdir_to_nonexisting_pkinstallsandbox
-/usr/bin/su "$USER" -c "/usr/bin/open /Applications/TotalTerminal.app"
+set `ps aux | grep loginwindow.app | grep -v grep`
+USERNAME=$1
+USERID=$2
+
+echo "login window user name is \"$USERNAME\" and PID is $USERID"
+
+if [[ -n "$USERNAME" && -n "$USERID" ]]; then
+  /bin/launchctl bsexec "$USERID" /usr/bin/su "$USERNAME" -c "/usr/bin/open /Applications/TotalTerminal.app"
+fi
