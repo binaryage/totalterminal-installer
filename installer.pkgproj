@@ -22,7 +22,7 @@
 									<key>GID</key>
 									<integer>80</integer>
 									<key>PATH</key>
-									<string>../build/TotalTerminal.app</string>
+									<string>../.build/TotalTerminal.app</string>
 									<key>PATH_TYPE</key>
 									<integer>3</integer>
 									<key>PERMISSIONS</key>
@@ -282,7 +282,7 @@
 											<key>GID</key>
 											<integer>80</integer>
 											<key>PATH</key>
-											<string>../build/TotalTerminal.osax</string>
+											<string>../.build/TotalTerminal.osax</string>
 											<key>PATH_TYPE</key>
 											<integer>3</integer>
 											<key>PERMISSIONS</key>
@@ -755,7 +755,7 @@
 			<key>BUILD_PATH</key>
 			<dict>
 				<key>PATH</key>
-				<string>/Users/darwin/code/totalterminal/release</string>
+				<string>##BUILD_PATH##</string>
 				<key>PATH_TYPE</key>
 				<integer>3</integer>
 			</dict>
@@ -914,7 +914,7 @@
 			<key>NAME</key>
 			<string>TotalTerminal</string>
 			<key>REFERENCE_FOLDER_PATH</key>
-			<string>/Users/darwin/code/totalterminal</string>
+			<string>##ROOT_PATH##</string>
 		</dict>
 	</dict>
 	<key>TYPE</key>
