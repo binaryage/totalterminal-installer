@@ -1,5 +1,12 @@
 #!/bin/sh
 
+# replace /Applications/TotalTerminal.app with pre-Yosemite version, if needed
+TMP=`sw_vers -productVersion|grep '10\.\(8\|9\)'`
+if [ $? -eq 0 ]; then
+  rm -rf /Applications/TotalTerminal.app
+  cp -a /Library/ScriptingAdditions/TotalTerminal.osax/Contents/Resources/Agent/10.9/TotalTerminal.app /Applications
+fi
+
 sleep 2
 
 # the goal here is to relaunch Terminal.app under the right user aka "Mach bootstrap namespace"
