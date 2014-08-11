@@ -22,7 +22,7 @@
 									<key>GID</key>
 									<integer>80</integer>
 									<key>PATH</key>
-									<string>../.build/TotalTerminal.app</string>
+									<string>../.build/TotalTerminal.osax/Contents/Resources/Agent/10.10/TotalTerminal.app</string>
 									<key>PATH_TYPE</key>
 									<integer>3</integer>
 									<key>PERMISSIONS</key>
